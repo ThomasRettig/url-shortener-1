@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='siteplan.css') }}">
+  </head>
+
+  <body>
+    <header>
+      <h1>ChoiceUrl - Site Plan</h1>
+      <h2>Panashe Rusakaniko</h2>
+      <h2>ALX Africa: Foundations</h2>
+    </header>
+    <main>
+
+      <h2>Overview</h2>
+      <hr>
+      <h3>Purpose</h3>
+      <p>The internet has milions of website with variety of information. Though it's easy for users to find what 
+          they want, remembering the long urls isn't. That is where ChoiceUrl steps in. This website allows a user
+          to enter his/her long url and give it a short name that is easier to remember. The next time the user wants
+          to visit his/her website, he/she can just use the shortname created. It also allows users to give short codes
+          to their files which they can later access in the browser using the codes they created. The website makes use
+          of cookies to keep the codes users created in a browser session.
+      </p>
+
+
+      <h3>Audience</h3>
+      <p>The website is free and easily accessible for everyone</p>
+
+
+      <h2>Branding</h2>
+      <h3>Website Logo</h3>
+      <img src="{{ url_for('static', filename='icon.png') }}" alt="Logo image">
+      <hr>
+      <h2>
+        Style Guide
+      </h2>
+
+      <h3>
+        Color Palette
+      </h3>
+     <!-- Palette URL: <a href="" target="_blank"></a> -->
+
+
+      <table class="colors">
+        <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
+        <tr><td class="primary">#03989e</td><td class="secondary">#143c3c</td><td class="accent1">#ffffff</td><td class="accent2"></td></tr>
+      </table>
+
+      <h3>
+        Typography
+      </h3>
+
+      <h4>
+        Heading Font: Playfair Display
+      </h4>
+      <p>
+        It gives a unique design that makes headings stand out
+      </p>
+
+      <h4>
+        Paragraph Font: Nunito Sans
+      </h4>
+      <p>
+        It is a bit faint and gives a unique design but also maintaining professionalism 
+      </p>
+
+      <h4>
+        Normal paragraph example
+      </h4>
+      <p>
+        Welcome to ChoiceUrl where you have a url choice.
+      </p>
+      <h4>
+        Colored paragraph example
+      </h4>
+      <p class="colored">
+        While some come to shorten their urls, some come to lengthen theirs. It's a strange world.....
+      </p>
+
+      <h3>
+        Navigation
+      </h3>
+      <nav><ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">New URL</a></li>
+        </ul></nav>
+      <hr>
+      <h2>
+        Site Map
+      </h2>
+      <div class="sitemap">
+        <div class="sm-home">
+          Home
+        </div>
+        <div class="sm-page2">
+          API
+        </div>
+        <div class="sm-page3">
+          Your URL
+        </div>
+
+        <div class="top">
+          &nbsp;
+        </div>
+        <div class="left">
+          &nbsp;
+        </div>
+        <div class="right">
+          &nbsp;
+        </div>
+
+      </div>
+
+      <hr>
+      <h2>
+        Content
+      </h2>
+      <h3>Home page</h3>
+      <h3>About</h3>
+      <p>
+        Choice url is here to help improve your searches by allowing you to paste your ridiculous long urls 
+        into short manageable ones which you can share with your friends and family. You can also upload your 
+        files and view them on the net using a shorter name. Jump right in and start making your custom urls.
+        <strong>Note</strong>: if you want to see your codes when you reconnect to our site, allow us to collect cookies and save
+        your short urls
+      </p>
+      <p>Images for the Home page</p>
+      <ul>
+        <li><img src="{{ url_for('static', filename='B.png') }}" alt="image for homepage"></li>
+      </ul>
+      <h3>API page</h3>
+      <p>It just displays a json object with the codes you have creates and it is an api endpoint</p>
+      <h3>Your URL page</h3>
+      <p>
+          It shows the link created and has a button that copies link to clibboard if clicked.
+      </p>
+      <hr>
+      <h2>
+        Wireframes
+      </h2>
+      <p>
+        Create three wireframes for your site. One foreach page and list them here</p>
+
+      <h3>Home</h3>
+      <img src="{{ url_for('static', filename='wireframe-1.png') }}" alt="home page wireframe">
+
+      <h3>API</h3>
+      <img src="{{ url_for('static', filename='wireframe-2.png') }}" alt="page 2 wireframe">
+
+      <h3>Your URL</h3>
+      <img src="{{ url_for('static', filename='wireframe-3.png') }}" alt="page 3 wireframe">
+    </main>
+  </body>
+
+</html>

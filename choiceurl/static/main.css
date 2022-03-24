@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Playfair+Display:ital@1&display=swap');
+:root {
+  --heading-color:#03989e;
+  --headings-font:'Playfair Display', serif;
+  --body-font: 'Nunito Sans', sans-serif;
+}
+h1,h2{
+  font-family: var(--headings-font);
+  color: var(--heading-color);
+}
+p, ul, form {
+  font-family: var(--body-font);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #03989e;
+}
+
+nav ul li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #121212;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.active {
+  background-color: #143c3c;
+}
+
+fieldset {
+    max-width: 550px;
+    border: double 5px #03989e;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+legend {
+    color: #121212;
+    background-color: #ededed;
+}
+
+label,input {
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -190px;
+}
+
+.button {
+    width: 325px;
+    background-color: #03989e;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.button:hover {
+  background-color: #121212;
+}
+
+#about {
+  text-align: center;
+}
+
+.about-site-paragraph{
+  border: 2px #03989e solid;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+session-links li{
+  list-style: lower-roman;
+}
+ 
+footer {
+  display: grid;
+  height: 55px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #03989e;
+  color: #bbb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* css for your-url.html */
+.contain-url {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contain-url h1 {
+  color: #03989e;
+}
+
+button {
+  width: 200px;
+  background-color: #03989e;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+contain-404 {
+  color:#03989e;
+  text-align: center;
+}
+
+.the-message {
+  color: red;
+}
