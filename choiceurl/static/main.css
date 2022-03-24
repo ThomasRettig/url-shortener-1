@@ -99,12 +99,17 @@ footer {
   height: 55px;
   grid-template-columns: 1fr 1fr;
   background-color: #03989e;
-  color: #bbb;
-  padding: 25px;
+  color: #ffffff;
+  padding: 0px 10px 20px;
   border-radius: 10px;
   margin-top: 10px;
 }
 
+.social {
+  grid-column: 2/3;
+  justify-self: end;
+  align-self: center;
+}
 /* css for your-url.html */
 .contain-url {
   max-width: 500px;
@@ -133,7 +138,7 @@ contain-404 {
 
 @media screen and (max-width: 600px) {
   /* beginning of media query */
-      .banner-image,nav, .container{
+      .banner-image,nav, .container, .social{
       display: block;
       }
       nav ul, footer {
@@ -144,4 +149,8 @@ contain-404 {
       }
       
   /* end of media query */
+  }
+
+  a img {
+    height: 30px;
   }
