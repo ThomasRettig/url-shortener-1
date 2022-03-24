@@ -41,7 +41,6 @@ nav ul li a:hover:not(.active) {
 }
 img {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .active {
@@ -101,7 +100,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   background-color: #03989e;
   color: #bbb;
-  padding: 10px;
+  padding: 25px;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -131,3 +130,18 @@ contain-404 {
 .the-message {
   color: red;
 }
+
+@media screen and (max-width: 600px) {
+  /* beginning of media query */
+      .banner-image,nav, .container{
+      display: block;
+      }
+      nav ul, footer {
+      display: block;
+      }
+      img {
+        display: block;
+      }
+      
+  /* end of media query */
+  }
