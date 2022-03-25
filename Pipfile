@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+<<<<<<< HEAD
 attrs = "==21.4.0"
 click = "==8.0.4"
 gunicorn = "==20.0.4"
@@ -18,6 +19,11 @@ pytest = "==7.1.1"
 tomli = "==2.0.1"
 Flask = "==2.0.3"
 Werkzeug = "==2.0.3"
+=======
+flask = "*"
+sqlalchemy = "*"
+pytest = "*"
+>>>>>>> 16f5fa4aaf6f0e8f40be01d2b1734f959a473658
 
 [dev-packages]
 
