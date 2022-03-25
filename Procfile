@@ -1,1 +1,1 @@
-web: gunicorn app:choiceurl
+web: gunicorn choiceurl:choiceurl
