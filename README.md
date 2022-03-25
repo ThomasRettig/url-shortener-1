@@ -51,3 +51,30 @@ This project is a portofolio project for ALX Software Engineering Foundation Pro
 | `static` | Has static files such as css file and images|
 | `templates` | Has html templates for the frontend|
 
+## FLASK 
+I decided to use flask for backend because it is best for the microservices I needed for my web application.<br> It is also a microframework that works best with mini applications such as mine.<br> I also wanted to implement cookies that store user's browser session data and Flask provides the session module for that.<br> Lastly Flask helped me break my application into multiple blueprints.
+
+## Heroku
+I decided to use Heroku for deployment because it is easier to push the files to heroku for deployment. 
+
+## How to deploy
+1. First clone this repo:
+   ``` git clone https://github.com/PanasheR/url-shortener.git```
+2. cd into the repo
+   ``` cd url-shortener ```
+3. install pipenv that serves both for pip and virtual environment
+   ```pipenv install```
+4. creates a virtual environment in that directory using pipenv
+   ```pipenv shell```
+5. install flask, gunicorn and pytest
+   ```
+   pipenv install flask
+   pip install -U pytest
+   ```
+6. Create a heroku account on heroku.com and link the github repo to heroku and deploy
+
+## Acknowledgements
+1. [ALX](https://www.alxafrica.com) - For the staff's help, guidance and the knowledge
+
+
+  
