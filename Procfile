@@ -1,1 +1,1 @@
-web: gunicorn choiceurl:choiceurl
+web: gunicorn choiceurl:create_app()
