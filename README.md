@@ -77,4 +77,6 @@ I decided to use Heroku for deployment because it is easier to push the files to
 1. [ALX](https://www.alxafrica.com) - For the staff's help, guidance and the knowledge
 
 ## Created By:
-Yours truly: ### Panashe Rusakaniko
+Yours truly:
+### Panashe Rusakaniko
+- I acknowledge that this work is mine, done by me, for me and ALX Foundations program
