@@ -25,4 +25,29 @@ This project is a portofolio project for ALX Software Engineering Foundation Pro
 - If the user clicks on API, he/she is directed to the website's API endpoint
 
 ## The Team
-- [Panashe Rusakaniko](https://twitter.com/PanasheRusakan2)
+- [Panashe Rusakaniko](https://twitter.com/PanasheRusakan2) : Panashe Rusakaniko likes writing short stories and gaming during his spare time.
+
+## Architecture
+![architecture](https://github.com/PanasheR/url-shortener/blob/main/Web%20architecture.png)
+1. The user access visits the web application using his/her browser
+2. The web application is served by flask jinja templates
+3. If the user sends a get request he/she will be redirected to the home page over and over again until he/she sends a POST request i.e<br>
+   Usess the forms to input urls
+4. When the user inputs his/her short urls, a POST method is sent to a server and the server will store the website urls and short names in a json document
+5. The server will also return a POST request to the user with his/her link and redirect the user to a page where he/she can copy the short link he/she created
+6. The application will also use cookies to grab the user's browser session data and display the links the user created on his/her home page as a link
+
+| Component | Description |
+| --- | --- |
+| `wsgi.py` | File in root directory neccessary for deployment on heroku. The file calls create_app() from our app module. The function will tell heroku to launch app|
+| `requirements.txt` | Has modules needed for the flask app to function |
+| `Procfile` | This file is the one that shows heroku that we are using a gunicorn server for deployement of our app|
+| `Pipfile.lock` | ntended to specify, based on the packages present in Pipfile, which specific version of those should be used, avoiding the risks of automatically upgrading packages that depend upon each other and breaking your project dependency tree.|
+| `choiceurl` | Directory/module that contains the application |
+| `__init__.py ` | Creates the create_app() function that calls the app instance and also registers the app blueprint |
+| `choiceurl.py ` | Main file that creates all the routes for the application, renders templates, handles errors and creates API endpoints |
+| `conftest.py` | Calls the app for tests using pytest |
+| `test_app.py` | Files performs one test for the shorten button on the home page|
+| `static` | Has static files such as css file and images|
+| `templates` | Has html templates for the frontend|
+
