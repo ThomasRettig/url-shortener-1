@@ -46,10 +46,27 @@ p {
 }
 
 button, input, select, textarea {
-  background-color: transparent;
-  border: 1px solid WindowFrame;
-  color: inherit;
-  font: inherit;
-  letter-spacing: inherit;
-  padding: 0.25em 0.375em;
+    background-color: transparent;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 0.35em;
+}
+
+input[type="text"] {
+    margin: 5px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+label {
+    cursor: text;
+}
+
+fieldset {
+    border: none;
 }
