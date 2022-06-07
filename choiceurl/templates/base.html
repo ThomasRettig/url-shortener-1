@@ -4,36 +4,16 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}{% endblock %}</title>
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.png') }}">
-        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
-        <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
-        <link href="https://rsms.me/inter/inter-display.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.png') }}"/>
+        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" />
     </head>
 <body>
-  <!-- Responsive navbar-->
- <nav>
-  <ul>
-    <li><a href="{{url_for('choiceurl.home')}}" class="active">Choice-URL</a></li>
-    <li><a href="#about">About</a><li>
-    <li><a href="{{ url_for('choiceurl.session_api') }}">API</a></li>
-    <li style="float: right;"><a href="{{ url_for('choiceurl.home') }}">New URL</a></li>
-  </ul>
-  </nav>
-  {% for message in get_flashed_messages() %}
-  <div class="contain-flash-message">
-    <div class="the-message">{{ message }}</div>
-  </div>
-  <br>
-  {% endfor %}
 
   {% block main %}
   {% endblock %}
-  {% block footer %}
-  {% endblock %}
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{ url_for('static', filename='jquery-3.3.1.slim.min.js') }}"></script>
   <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
   <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
 </body>
+</html>
