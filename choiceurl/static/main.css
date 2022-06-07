@@ -17,17 +17,13 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
-  min-height: 100vh;
-  margin: 0;
+  margin: 8vw;
 }
-
+/*
 main {
   padding: 8vw;
-}
+}*/
 
 img {
   max-width: 100%;
@@ -69,17 +65,16 @@ legend {
 }
 
 .link > input[type="text"] {
-    width: 100%;
-    padding-right: 25px;
-    background-image: linear-gradient(45deg, transparent, white);
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  width: 100%;
+  padding-right: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 button#copyButton {
-    position: relative;
-    right: 34px;
-    border: none;
+  position: relative;
+  right: 34px;
+  border: none;
 }
 
 [readonly]:focus {
@@ -95,7 +90,7 @@ button#copyButton {
 [data-title]:focus-visible::before {
   content: attr(data-title);
   position: absolute;
-  bottom: -22px;
+  bottom: -25px;
   display: inline-block;
   padding: 4px 6px;
   border-radius: 5px;
