@@ -4,22 +4,18 @@
 
 {% block main %}
 
-
-<div class="contain-url">
-  <h1">URL Created</h1>
+<main>
+  <h1>URL successfully created!</h1>
   <input class="lead" id="new_url" value="{{ url_for('choiceurl.redirect_to_url', code=code, _external=True) }}" readonly>
-  <p>
-    <button onclick="myFunction()" class="btn">Copy URL</button>
-  </p>
-</div>
-
+  <button id="copyButton">Copy URL</button>
+</main>
 
 <script>
-  function myFunction() {
-    var copyText = document.getElementById("new_url");
+  document.getElementById("copyButton").addEventListener("click", () => {
+    let copyText = document.getElementById("new_url");
     copyText.select();
     document.execCommand("copy");
-  }
+  });
 </script>
 
 {% endblock %}

@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+main {
+  padding: 8vw;
+}
+
 img {
   max-width: 100%;
 }
@@ -38,7 +42,7 @@ fieldset {
   margin-bottom: 10px;
 }
 
-input[type="submit"] {
+button, input[type="submit"] {
   cursor: pointer;
 }
 
