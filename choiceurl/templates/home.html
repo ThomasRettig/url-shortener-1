@@ -3,32 +3,11 @@
 {% block title %}choice-url{% endblock %}
 
 {% block main %}
-
-  <div class="container">
-     <form action="your_url" method="post" class="item-1">
-      <fieldset>
-      <legend>Website</legend>
-        <input type="text" name="code" value="" required placeholder="Alias">
-        <br>
-        <input type="url" name="url" value="" required placeholder="Long URL">
-        <br>
-        <input type="submit" value="shorten">
-       </fieldset>
-      </form>
-<!-- 
-      <form action="your_url" method="post" enctype="multipart/form-data" class="item-2">
-       <fieldset>
-       <legend><strong>File</strong></legend>
-        <label for="code">Short Name:</label>
-        <input type="text" name="code" value="" required>
-        <br>
-        <label for="file" style="margin-left: 120px;">File URL:</label>
-        <input type="file" name="file" value="" required>
-        <br>
-        <input type="submit" value="shorten" class="button">
-       </fieldset>
-      </form> -->
-  </div>
+<form action="your_url" method="post" class="item-1">
+  <input type="url" name="url" value="" placeholder="Long URL" required>
+  <input type="text" name="code" value="" placeholder="Alias" required>
+  <input type="submit" value="shorten">
+</form>
 
   {% if codes %}
     <h2>Codes you have created:</h2>
