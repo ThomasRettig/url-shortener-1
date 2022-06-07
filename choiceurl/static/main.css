@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: system-ui;
 }
 
 html {
@@ -17,32 +18,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-
-header > h1,
-header > h2 {
-  color: var(--headline-color-on-color);
-}
-
-p {
-  padding: 1em;
 }
 
 button, input, select, textarea {
