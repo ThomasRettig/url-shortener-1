@@ -27,11 +27,15 @@ button, input, select, textarea {
   color: inherit;
   font: inherit;
   letter-spacing: inherit;
-  padding: 0.35em;
+  padding: 0.3em;
+}
+
+fieldset {
+  border: none;
 }
 
 :is(input[type="text"], input[type="url"]):not(:last-of-type) {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 input[type="submit"] {
@@ -42,6 +46,7 @@ label {
   cursor: text;
 }
 
-fieldset {
-  border: none;
+legend {
+  font-weight: 500;
+  padding: 0;
 }
