@@ -8,7 +8,7 @@
   <h1>URL successfully created!</h1>
   <p class="link">
     <input type="text" value="{{ url_for('choiceurl.redirect_to_url', code=code, _external=True) }}" readonly>
-    <button id="copyButton" aria-label="Copy generated link">🔗</button>
+    <button id="copyButton" aria-label="Copy generated link" data-title="Copy to clipboard">🔗</button>
   </p>
 </main>
 
