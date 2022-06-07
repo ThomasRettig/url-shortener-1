@@ -63,6 +63,15 @@ p {
   color: var(--paragraph-color);
 }
 
+button, input, select, textarea {
+  background-color: transparent;
+  border: 1px solid WindowFrame;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0.25em 0.375em;
+}
+
 .colors {
   width: 100%;
   min-width: 350px;
