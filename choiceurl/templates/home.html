@@ -8,16 +8,14 @@
      <form action="your_url" method="post" class="item-1">
       <fieldset>
       <legend><strong>Website</strong></legend>
-        <label for="code">Short Name:</label>
-        <input type="text" name="code" value="" required>
+        <input type="text" name="code" value="" required placeholder="Alias">
         <br>
-        <label for="url">Website url:</label>
-        <input type="url" name="url" value="" required>
+        <input type="url" name="url" value="" required placeholder="Long URL">
         <br>
-        <input type="submit" value="shorten" class="button">
+        <input type="submit" value="shorten">
        </fieldset>
       </form>
-
+<!-- 
       <form action="your_url" method="post" enctype="multipart/form-data" class="item-2">
        <fieldset>
        <legend><strong>File</strong></legend>
@@ -29,7 +27,7 @@
         <br>
         <input type="submit" value="shorten" class="button">
        </fieldset>
-      </form>
+      </form> -->
   </div>
 
   {% if codes %}
