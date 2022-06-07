@@ -21,27 +21,27 @@ img {
 }
 
 button, input, select, textarea {
-    background-color: transparent;
-    border: 1.5px solid gray;
-    border-radius: 5px;
-    color: inherit;
-    font: inherit;
-    letter-spacing: inherit;
-    padding: 0.35em;
+  background-color: transparent;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0.35em;
 }
 
-input[type="text"] {
-    margin: 5px;
+:is(input[type="text"], input[type="url"]):not(:last-of-type) {
+  margin-bottom: 5px;
 }
 
 input[type="submit"] {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 label {
-    cursor: text;
+  cursor: text;
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
