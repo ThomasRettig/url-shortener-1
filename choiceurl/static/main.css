@@ -16,8 +16,12 @@
   --secondary-color: #143c3c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background-color: var(--primary-color);
+  -webkit-text-size-adjust: none;
 }
 
 body {
